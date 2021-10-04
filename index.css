@@ -1,0 +1,324 @@
+
+html, body{
+    font: 'Roboto', ;
+    background-color: #212529;
+    color: white;
+    
+}
+
+.btn{
+    background-color: rgb(94, 241, 227);
+    color: black;
+    border-radius: 0;
+    border: none;
+}
+
+.btn-primary:hover{
+    background-color: rgb(36, 109, 102);
+}
+
+
+/* NAV ==================================================== */
+
+#navDiv{
+    width: 100%;
+    text-align: center;
+
+}
+
+ul{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+li{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+.scrolltop{
+    height: 100px;
+   
+}
+
+
+
+/* NAME DETAILS ============================================================== */
+
+.nameContainer{
+    height: 90vh;
+   
+}
+
+.nameContainer > div{
+    color: white;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.nameDetails{
+    
+    margin-top: 200px;
+    width: 100%;
+    text-align: center;
+}
+
+span{
+    color: rgb(94, 241, 227);
+}
+
+
+.topButton{
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 800px) {
+    .nameDetails>h1{
+        letter-spacing: 0.1rem;
+    }
+}
+
+
+.line__1,
+.line__2 {
+  white-space: nowrap; /* keep text in one line */
+  overflow: hidden; /* hide text behind the cursor */
+  margin: 0.5rem auto;
+  /* font-family: "Major Mono Display", monospace; */
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.line__1 {
+  border-right: 2px solid #212529;
+
+  /* define animation types for text + cursor */
+  animation: animated-text__1 1.5s steps(30, end) 0.5s 1 normal both,
+    animated-cursor__1 900ms steps(30, end) 2.0;
+}
+
+.line__2 {
+  border-right: 2px solid #212529;
+
+  /* define animation types for text + cursor */
+  animation: animated-text__2 1.5s steps(30, end) 0.5s 1 normal both,
+    animated-cursor__2 900ms steps(30, end) infinite;
+  -webkit-animation-delay: 7s;
+  animation-delay: 2.0s;
+}
+
+@keyframes animated-cursor__1 {
+  from {
+    border-right-color: #212529;
+  }
+  to {
+    border-right-color: rgb(94, 241, 227);
+  }
+}
+
+@keyframes animated-cursor__2 {
+  from {
+    border-right-color: #212529;
+  }
+  to {
+    border-right-color: rgb(94, 241, 227);
+  }
+}
+
+@keyframes animated-text__1 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 380px;
+  }
+}
+
+@keyframes animated-text__2 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 310px;
+  }
+}
+
+
+
+
+
+/* ABOUT ME ============================================================================ */
+
+.aboutContainer{
+    text-align: center;
+    padding-top: 70px;
+    height: 60vh;
+}
+
+.aboutDetails{
+    
+    width: 60%;
+}
+.aboutDetails > p{
+    font-size: 2rem;
+
+}
+
+
+.techStack{
+    margin-top: 100px;
+    font-size: 7rem;
+}
+.techStack > i{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.fa-html5{
+    color: #e34c26 ;
+}
+.fa-css3-alt{
+    color: #264de4 ;
+}
+.fa-bootstrap{
+    color: #563d7c ;
+}
+.fa-js-square{
+    color: #f0db4f 
+}
+.fa-react{
+    color: #7cc5d9 ;
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+    .aboutDetails > p{
+        font-size: 1.3rem;
+    }
+    .aboutDetails{
+    
+        width: 100%;
+    }
+    .techStack{
+        margin-top: 100px;
+        font-size: 3.5rem;
+    }
+}
+
+
+/* PROJECTS ============================================================================= */
+
+.projectContainer{
+    text-align: center;
+    padding-top: 70px;
+    margin-top: 100px;
+}
+
+.projectTitle{
+    margin-bottom: 100px;
+}
+
+.projectTitle>h1{
+    font-size: 2rem;
+}
+
+.cardContainer{
+    margin-bottom: 100px;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    border-radius: 0;
+    background-color: #212529;
+    border: none;
+    width: 80%;
+    margin:auto
+}
+
+.card-img-top{
+    width: 50%;
+    border-radius: 0;
+}
+
+.card-body{
+    margin-left: 50px;
+}
+
+.card-title{
+    font-size: 2.3rem;
+    color: turquoise;
+}
+.card-text{
+    font-size: 1.2rem;
+    text-align: left;
+}
+.cardBtn{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+    .projectContainer{
+        margin-top: 150px;
+    }
+    .card{
+        flex-direction: column;
+        width: 100%;
+    }
+    .projectTitle{
+        margin-bottom: 50px;
+    }
+
+    .card-img-top{
+        width: 100%;
+        border-radius: 0;
+    }
+    .card-body{
+        margin-left: 0;
+    }
+    .pixelTab{
+        display: inline-block;
+        width: 15px;
+    }
+    
+}
+
+/* Contact ====================================================================== */
+
+.contactContainer{
+    text-align: center;
+    padding-top: 70px;
+    height: 70vh;
+}
+
+.tag > a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(94, 241, 227);
+}
+
+.contactBtn{
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+
+}

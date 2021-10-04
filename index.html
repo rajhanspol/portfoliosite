@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Rajhans Pol || Web Developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+    <!-- Nav -->
+    <nav class="navbar sticky-top navbar-dark bg-dark">
+        <div id="navDiv" class="container-fluid">
+            <ul class="navbar-nav flex-row">
+                <li ><a class="nav-link active" href="#home">Home</a></li>
+                <li ><a class="nav-link active" href="#about">About</a></li>
+                <li><a class="nav-link active" href="#project">Projects</a></li>
+                <li><a class="nav-link active" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="home" class="scrolltop"></div>
+
+    <div id="home" class="container-fluid nameContainer">
+        <div class="container">
+
+            <div class="nameDetails">
+                <h1 class="line__1">Hello! I'm <span>Rajhans</span>,</h1>
+                <h1 class="line__2">a web developer.</h1>
+                
+                
+            </div>
+
+
+            <div class="container topButton">
+                <a class="btn btn-lg btn-primary" href="#project">View my projects  <i class="fas fa-arrow-down"></i></a>
+            </div>
+        </div>    
+    </div>
+
+
+    <!-- About Me -->
+    <div id="about" class="container-fluid aboutContainer">
+        <div class="projectTitle">
+            <h1>About Me</h1>
+        </div>
+        <div class="container aboutDetails">
+            <p>Based in Mumbai, India. Enjoy building rich interactive web apps. Always on the lookout for exciting projects to work on.</p>
+        </div>
+        <div class="container techStack">
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
+            <i class="fab fa-bootstrap"></i>
+            <i class="fab fa-js-square"></i>
+            <i class="fab fa-react"></i>
+
+        </div>
+
+    </div>
+
+    
+
+    <!-- Projects -->
+    <div id="project" class="container-fluid projectContainer">
+        <div class="projectTitle">
+            <h1>Projects</h1>
+        </div>
+        <div class="row">
+
+            <div class="col-12 cardContainer">
+                <div class="card">
+                    <img class="card-img-top" src="./img/pixelDraw.PNG" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Pixel Draw</h5>
+                      <p class="card-text">Create pixel art on a customized grid with a variety of options. Made with React. <br>
+                            <br><strong>Features:</strong>
+                            <br> - Save created art as an image to desktop
+                            <br> - Upload and share created pixel image to <span class="pixelTab"></span>an online gallery
+                            <br> - Cloud Storage
+                            <br> - Authentication Options
+                        </p>
+                        <a href="https://rajhanspol.github.io/pixelShare/" class="btn btn-primary cardBtn">Live Site</a>
+                        <a href="https://github.com/rajhanspol/pixelShare" class="btn btn-primary cardBtn">GitHub repository</a>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-12">
+                <div class="card">
+                    <img class="card-img-top" src="./img/bonfiretwo.PNG" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Restaurant Online Order App</h5>
+                      <p class="card-text">Place orders as a customer, or log in as admin and accept customer placed orders. Made with React.<br>
+                            <br><strong>Features:</strong>
+                            <br> - Admin Dashboard to accept or reject orders
+                            <br> - Edit and add items to menu
+                            <br> - Authentication for customers and admin
+                            <br> - Firebase Storage
+                        </p>
+                      <a href="https://rajhanspol.github.io/bonfireburgers/" class="btn btn-primary cardBtn">Live Site</a>
+                      <a href="https://github.com/rajhanspol/bonfireburgers" class="btn btn-primary cardBtn">GitHub repository</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- Contact -->
+     <div id="contact" class="container-fluid contactContainer">
+        <div class="projectTitle">
+            <h1>Contact Me</h1>
+        </div>
+        <div class="row contact">
+            <div class="col-12 tag">
+                <a href="mailto:hello@jane.dev" class="footer__link">rajhanspol@gmail.com</a>
+            </div>
+            <div class="col-12">
+                <a href="https://github.com/rajhanspol" class="btn btn-primary contactBtn">GitHub</a>
+            </div>
+        </div>
+     </div>
+
+     <!-- Footer -->
+     <footer class="footer">
+        <p>made by rajhans pol</p>
+     </footer>
+
+
+
+    
+    <script type="text/javascript" src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+</body>
+</html>
